@@ -7,7 +7,7 @@
   lpc = log -p -c --no-merges
   lc = log
   lco = log --pretty=oneline
-  lx = log --graph --pretty=format:'%s - %Cred%h%Creset  %Cgreen(%cr)%Creset %an' --abbrev-commit --date=relative
+  lx = log --graph --pretty=format:'%s - %Cred%h%Creset  %Cgreen(%cr)%Creset %an' --abbrev-commit --date=relative --all
   lst = log --stat
   co = checkout
   dfc = diff
