@@ -6,7 +6,7 @@
   st = status
   lpc = log -p -c
   lc = log
-  lco = log --pretty=oneline
+  lco = log --pretty=oneline --decorate
   lx = log --graph --pretty=format:'%s - %Cred%h%Creset  %Cgreen(%cr)%Creset %an' --abbrev-commit --date=relative --all
   lst = log --stat
   co = checkout
@@ -15,6 +15,7 @@
   c = commit
   m = commit -m
   a = add
+  showrel = name-rev --name-only
   igndb = update-index --assume-unchanged config/database.yml
   igngitign = update-index --assume-unchanged .gitignore
   cldb = checkout config/database.yml
